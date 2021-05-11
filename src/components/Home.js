@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import ImgSlider from "./ImageSlider";
+import ImageSlider from "./ImageSlider";
 import NewDisney from "./NewDisney";
 import Originals from "./Originals";
 import Recommends from "./Recommends";
@@ -57,7 +57,7 @@ const Home = (props) => {
 
   return (
     <Container>
-      <ImgSlider />
+      <ImageSlider />
       <Viewers />
       <Recommends />
       <NewDisney />

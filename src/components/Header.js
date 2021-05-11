@@ -46,6 +46,14 @@ function Header() {
             history.push("/login")
         })
     }
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
 
 
     return (
@@ -57,31 +65,33 @@ function Header() {
                         <Login onClick = {signIn}>Login</Login>
                     </LoginContainer>):
                 <>
-                    <NavMenu>
-                        <a href="#">
+                    <NavMenu class="topnav" id="myTopnav" >
+                        <a href="/home" className="links">
                             <img src="/images/home-icon.svg" alt="" />
                             <span>HOME</span>
                         </a>
-                        <a href="#">
+                        <a href="" className="links">
                             <img src="/images/search-icon.svg" alt="" />
                             <span>SEARCH</span>
                         </a>
-                        <a href="#">
+                        <a href="#" className="links">
                             <img src="/images/watchlist-icon.svg" alt="" />
                             <span>WATCHLIST</span>
                         </a>
-                        <a href="#">
+                        <a href="#" className="links">
                             <img src="/images/original-icon.svg" alt="" />
                             <span>ORIGINALS</span>
                         </a>
-                        <a href="#">
+                        <a href="#" className="links">
                             <img src="/images/movie-icon.svg" alt="" />
                             <span>MOVIES</span>
                         </a>
-                        <a href="#">
+                        <a href="#" className="links">
                             <img src="/images/series-icon.svg" alt="" />
                             <span>SERIES</span>
                         </a>
+
+                        
 
                     </NavMenu>
                     <UserImg onClick={signOut} 
@@ -153,6 +163,14 @@ const NavMenu = styled.div`
             }
         }
     }
+    @media (max-width: 800px){
+        .links{
+            display:none;
+        }
+    }
+    
+
+  
 
 
 `
