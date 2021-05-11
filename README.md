@@ -1,3 +1,14 @@
+
+Made this Disney CLone from CP videos with the help of firebase and learned a lot of styled components and firebase
+
+If any want to collaborate and make it more dynamic with the help of API then message me on gmail:hiteshpal.8097@gmail.com
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
